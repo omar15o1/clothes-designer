@@ -1,7 +1,136 @@
-colors: {
- 'text': '#040316',
- 'background': '#fbfbfe',
- 'primary': '#2f27ce',
- 'secondary': '#dddbff',
- 'accent': '#443dff',
-},
+
+body {
+    background-color: #fbfbfe;
+    margin: 0cap;
+    display: flex;
+}
+
+.login-bar {
+    background-color: #dddbff;
+    width: 30%;
+    height: 100vh;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0%;
+    font-size: 53px;
+    margin: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #443dff;
+}
+
+a {
+    text-decoration: none;
+    margin: 0cm;
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 300px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+}
+
+h1 {
+    margin-top: 0%;
+    text-align: center;
+    font-size: 55px;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+label {
+    margin-right: 200px;
+}
+
+.user , .pass , .email {
+    width: 85%;
+    height: 40px;
+    font-size: 18px;
+    border: 0cap;
+    border-radius: 15px;
+    margin: 10px;
+    margin-right:35px;
+    margin-left: 20;
+}
+
+.user:hover , .pass:hover , .email:hover {
+    background-color: #99999962;
+    font-size: 20px;
+}
+
+.user:focus , .pass:focus , .email:focus {
+    background-color: #99999962;
+    font-size: 20px;
+}
+
+.show-pass {
+    display: flex;
+    margin-top: 10px;
+}   
+
+.checkbox {
+    appearance: none;
+    background-color:#dddbff;
+    display: grid;
+    place-content: center;
+    font: inherit;
+    color: currentColor;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    width: 15px;
+    height: 15px;
+    margin-left:60px;
+}
+
+.checkbox::before {
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  background-color: CanvasText;
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+.checkbox:checked::before {
+  transform: scale(1);
+}
+
+label {
+    font-size: px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.1;
+}
+
+button {
+    background-color: #2f27ce;
+    border: 0ch;
+    width: 180px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin: 5px;
+    margin-inline:100px;
+}
+
+button:hover {
+    background-color: #221ab8;
+    cursor: pointer;
+}
+
+.img-bar {
+    width: 60%;
+    width: 100vh;
+    text-align: center;
+}
+
+img {
+  width: 100%;  
+  text-align: center;
+  margin-left: 100px;
+}
